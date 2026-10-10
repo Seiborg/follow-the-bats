@@ -42,7 +42,7 @@
     }
 
     .bat-image {
-      width: 250px;
+      width: 300px;
       height: 250px;
       object-fit: contain;
       margin: 0 auto 28px;
@@ -50,7 +50,7 @@
     }
 
     .subtitle {
-      font-size: 11px;
+      font-size: 12px;
       line-height: 1.9;
       letter-spacing: 1.5px;
       color: var(--muted);
@@ -62,7 +62,7 @@
     button {
       width: 100%;
       font-family: 'Montserrat', sans-serif;
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 1px;
       padding: 15px 16px;
       margin-top: 10px;
@@ -102,7 +102,7 @@
     #warning {
       display: none;
       margin-top: 12px;
-      font-size: 11px;
+      font-size: 12px;
       color: var(--cream);
     }
 
@@ -180,6 +180,8 @@
         return;
       }
 
+<!-- Hi smartypants, I know you can find the password by just looking at the code, but please be nice and don't spoil the game! I wasted so much time on this you wouldn't believe. Thanks bbz love you -->
+
       if (password.toLowerCase() === "eclipse") {
         result.innerHTML = `
           <p>Congratulations, you solved the puzzle!</p>
@@ -188,7 +190,7 @@
         `;
       } else {
         result.innerHTML = `
-          <p>Sorry, not this time.</p>
+          <p>Sorry, incorrect password.</p>
           <p>Please try again.</p>
         `;
       }
